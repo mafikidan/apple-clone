@@ -172,6 +172,15 @@ color:aqua ;
 .description-wraper.white{
 	color: white;
 }
+.description-wraper2.white{
+	color: white;
+	font-size: 20px;
+	font-weight:600 ;
+}
+.description-wraper2{
+	font-size: 20px;
+	font-weight:600 ;
+}
 .links-wrapper {
 	padding: 15px 0;
 }
@@ -202,6 +211,12 @@ color:aqua ;
 .title-wraper.bold {
   font-weight: 600;
   font-size: 32px;
+  line-height: 1.15em;
+  letter-spacing: -0.04em;
+}
+.title-wraper2.bold {
+  font-weight: 600;
+  font-size: 30px;
   line-height: 1.15em;
   letter-spacing: -0.04em;
 }
@@ -335,6 +350,51 @@ color:aqua ;
 	color: #fff;
 	margin-bottom: 20px;
 }
+.big_color{
+	 background-color: #F5F5F7;
+}
+.bg_black{
+	background-color: #000;
+	border-radius: 25px;
+	
+}
+.bg_white{
+	background-color:#fff;
+	border-radius: 25px;
+}
+.btn_link1{
+	display: flex;
+	justify-content:center ;
+	
+
+}
+.btn_link1 >Button {
+	border-radius: 30%;
+	width: 70px;
+}
+.btn_link1 >li>a{
+	font-size: 20px;
+	text-decoration: none;
+}
+.btn_link1 >li>a :hover{
+	text-decoration:dashed;
+}
+.btn_link1 >li{
+	list-style:none;
+	margin-left: 20px;
+}
+.img_hgt{
+	padding-bottom: 200px;
+	padding-top: 100px;
+}
+.img_hgt2{
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+.bg_main{
+	background-color: #E8E8E8;
+}
+
 /*Second section*/
 .second-hightlight-wrapper {
 	background-image: url("../images/home/macbookair-new-sm.jpg");
@@ -446,6 +506,10 @@ color:aqua ;
 	}		
 	.title-wraper.bold {
 	  font-size: 56px;
+	}
+	.bold_price{
+		font-size:27px ;
+		font-weight: 500;
 	}
 	/* Second section */
 	.second-hightlight-wrapper {

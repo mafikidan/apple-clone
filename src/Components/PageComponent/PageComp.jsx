@@ -1,82 +1,66 @@
+// import { Button } from 'bootstrap';
 import React from 'react'
+// import Card from 'react-bootstrap/Card';
 import Card from 'react-bootstrap/Card';
-
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button'; 
+import { Container } from 'react-bootstrap';
 function PageComp(props) {
   return (
-    <>
-        <section className={props.middleclassname}>
-		<div className="container-fluid">
-			<div className="row">
-				<div className="left-side-wrapper col-sm-12 col-md-6">
-					<div className="left-side-container card_b">
-                        	<div className="logo-wrapper">
-								<img src={props.logo} alt=''/>
-							</div>
-							<div className={props.titleclassname}>
-							{props.title}
-						</div> 
-						<div className={props.descriptionclassname}>
-							{props.description}
-						</div>
-						<div className={props.priceclassname}>
-							{props.pricedesciption}
-						</div>
+	  <>
+		    <Row xs={1} md={2} className="g-2 bg_main">
+      <Col md={6}> {/* This column will contain the first main card */}
+        <Card className={props.body_bg}>
+          <Card.Body className='border_rad'>
+            <div className={props.rightheight}>
+              <Card.Text className={props.descriptionclassname}>
+                {props.description}
+              </Card.Text>
+              <Card.Title className={props.titleclassname}>
+                {props.title}
+              </Card.Title>
+              <Card.Text className={props.priceclassname}>
+                {props.pricedesciption}
+              </Card.Text>
+              <div className={props.linkwraper}>
+                <Button variant="primary">Buy</Button>{' '}
+                <li><a href="#" a>{props.secondlink}</a></li>
+                <br/>
+              </div>
+            </div>
+            <Card.Img variant="top" src={props.fourimg} alt='' />
+          </Card.Body>
+        </Card>
+      </Col>
 
-						<div className={props.linkwraper}>
-                            <ul>
-                                <li><a href="">{props.firstlink}</a></li>
-                                <li><a href="">{props.secondlink}</a></li>
-                            </ul>
-                        </div>
-						<div className="top-logo-wrapper">
-							
-						</div>
+			  <Col md={6}
+			  > {/* This column will contain the second main card */}
+        <Card className={props.body_bg2}>
+          <Card.Body className='border_rad'>
+            <div className={props.rightheight2}>
+              <Card.Text className={props.descriptionclassname2}>
+                {props.description2}
+              </Card.Text>
+              <Card.Title className={props.titleclassname2}>
+                {props.title2}
+              </Card.Title>
+              <Card.Text className={props.priceclassname2}>
+                {props.pricedesciption2}
+              </Card.Text>
+              <div className={props.linkwraper2}>
+                <Button variant="primary">Buy</Button>{' '}
+                <li><a href="#" a>{props.secondlink2}</a></li>
+                <br/>
+              </div>
+            </div>
+            <Card.Img variant="top" src={props.fourimg2} alt='' />
+          </Card.Body>
+        </Card>
+      </Col>
+    </Row>
 
-						<div className="tvshow-logo-wraper">
-							<img src={props.logobot} alt='' />
-						</div>
-
-						<div className={props.playlink}>
-								<a href="#">{props.caption}</a>
-								
-						</div>
-						
-					</div>
-				</div>
-				<div className="right-side-wrapper col-sm-12 col-md-6">
-					<div className="right-side-container">
-						<div className="top-logo-wrapper">
-							<div className="logo-wrapper">
-								<img src={props.logo1} alt='' />
-							</div>
-						</div>
-                        <div className={props.titleclassname1}>
-							{props.title1}
-						</div> 
-						<div className={props.descriptionclassname1}>
-                             {props.description1}
-						</div>
-                        <div className="price-wrapper">
-							{props.pricedesciption1}
-						</div>
-						<div className={props.linkwraper1}>
-                            <ul>
-                                <li><a href="">{props.firstlink1}</a></li>
-                                <li><a href="">{props.secondlink1}</a></li>
-                            </ul>
-                        </div>
-						<div className="tvshow-logo-wraper">
-							<img src={props.logobot1} alt='' />
-						</div>
-
-					
-					</div>
-				</div>					
-			</div>
-		</div> 
-	</section>
-    
-    
+        
     </>
   )
 }
