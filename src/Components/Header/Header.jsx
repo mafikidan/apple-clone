@@ -34,47 +34,47 @@ const Header = () => {
           <div className={`navbar-collapse collapse ${isNavOpen ? 'show' : ''}`}>
             <ul className="navbar-nav nav-justified w-100 nav-fill">
               <li className="nav-item">
-                <Link className="nav-link" to="/mac" onClick={handleLinkClick}>
+                <Link className="nav-link_active js-scroll-trigger" to="/mac" onClick={handleLinkClick}>
                   Mac
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/iphone" onClick={handleLinkClick}>
+                <Link className="nav-link_active js-scroll-trigger" to="/iphone" onClick={handleLinkClick}>
                   iPhone
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/ipad" onClick={handleLinkClick}>
+                <Link className="nav-link_active js-scroll-trigger" to="/ipad" onClick={handleLinkClick}>
                   iPad
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/watch" onClick={handleLinkClick}>
+                <Link className="nav-link_active" to="/watch" onClick={handleLinkClick}>
                   Watch
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/tv" onClick={handleLinkClick}>
+                <Link className="nav-link_active js-scroll-trigger" to="/tv" onClick={handleLinkClick}>
                   TV
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/music" onClick={handleLinkClick}>
+                <Link className="nav-link_active js-scroll-trigger" to="/music" onClick={handleLinkClick}>
                   Music
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/support" onClick={handleLinkClick}>
+                <Link className="nav-link_active js-scroll-trigger" to="/support" onClick={handleLinkClick}>
                   Support
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/search" onClick={handleLinkClick}>
+              <li className="nav-item">j
+                <Link className="nav-link_active js-scroll-trigger" to="/search" onClick={handleLinkClick}>
                   <img src={search} alt="Search" />
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/cart" onClick={handleLinkClick}>
+                <Link className="nav-link_active js-scroll-trigger" to="/cart" onClick={handleLinkClick}>
                   <img src={cart} alt="Cart" />
                 </Link>
               </li>
